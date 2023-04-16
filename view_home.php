@@ -56,7 +56,7 @@ require_once "class/Mensagem.php";
         <form action="inserirMensagem.php" method="post" class="text text-center">
             <input style="width: 0em;" type="text" name="nome" value="<?= $_SESSION['nome']; ?>" required>
             <input type="text" name="mensagem" placeholder="Digite uma mensagem" required>
-            <input style="width: 0em;" type="number" name="usuario_idusuario" value="<?= $_SESSION['logado']; ?>" required>
+            <input type="hiden" name="usuario_idusuario" value="<?= $_SESSION['logado']; ?>" required>
             <button class="btn" name="enviarMensagem"><img src="img/enviar-mensagem.png" alt="enviar"></button>
         </form> <br><br>
     </div>
